@@ -2,9 +2,10 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Plane, BookOpen, MessageCircle, Download, Play, Users } from "lucide-react"
+import { Plane, Download, Play, Clock, Bookmark, Speech } from "lucide-react"
 import Footer from "@/components/footer"
 import Header from "@/components/header"
+import Image from "next/image"
 
 export default function HomePage() {
   return (
@@ -19,7 +20,12 @@ export default function HomePage() {
             <div className="text-center lg:text-left">
               {/* Logo/Brand - smaller for left layout */}
               <div className="flex items-center justify-center lg:justify-start gap-2 mb-6">
-                <Plane className="h-6 w-6 text-primary" />
+              
+                <Image
+                width={40}
+                height={40}
+                alt="TripMandarin Logo"
+                src="/logo.png" />
                 <h1 className="text-xl md:text-2xl font-bold text-primary">TripMandarin</h1>
               </div>
 
@@ -53,7 +59,7 @@ export default function HomePage() {
             {/* Right Content - Hero Image */}
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="/home-1.png?height=400&width=600"
                 alt="Foreign tourist learning Chinese phrases for China travel"
                 className="rounded-lg shadow-lg w-full"
               />
@@ -77,7 +83,7 @@ export default function HomePage() {
             <Card className="text-center">
               <CardContent className="pt-6">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MessageCircle className="h-8 w-8 text-primary" />
+                  <Plane className="h-8 w-8 text-primary" />
                 </div>
                 <h4 className="text-xl font-semibold mb-2">China Travel-Focused</h4>
                 <p className="text-muted-foreground">
@@ -89,8 +95,8 @@ export default function HomePage() {
 
             <Card className="text-center">
               <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BookOpen className="h-8 w-8 text-secondary" />
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="h-8 w-8 text-primary" />
                 </div>
                 <h4 className="text-xl font-semibold mb-2">Quick Mandarin Learning</h4>
                 <p className="text-muted-foreground">
@@ -102,8 +108,8 @@ export default function HomePage() {
 
             <Card className="text-center">
               <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-accent" />
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Bookmark className="h-8 w-8 text-primary" />
                 </div>
                 <h4 className="text-xl font-semibold mb-2">Chinese Cultural Tips</h4>
                 <p className="text-muted-foreground">
@@ -115,8 +121,8 @@ export default function HomePage() {
 
             <Card className="text-center">
               <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-accent" />
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Speech className="h-8 w-8 text-primary" />
                 </div>
                 <h4 className="text-xl font-semibold mb-2">Chinese Pronunciation Practice</h4>
                 <p className="text-muted-foreground">
@@ -142,7 +148,7 @@ export default function HomePage() {
               { icon: "🛍️", title: "Shopping Chinese", phrases: "10 phrases", href: "/courses/shopping" },
               { icon: "🚨", title: "Emergency Chinese", phrases: "6 phrases", href: "/courses/emergency" },
             ].map((scenario, index) => (
-              <Card key={index} className="hover:shadow-md transition-shadow cursor-pointer" asChild>
+              <Card key={index} className="hover:shadow-md transition-shadow cursor-pointer">
                 <a href={scenario.href}>
                   <CardContent className="p-6 text-center">
                     <div className="text-4xl mb-3">{scenario.icon}</div>

@@ -48,6 +48,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
   generator: "v0.app",
 }
 

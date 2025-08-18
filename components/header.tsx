@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Plane, Menu, X } from "lucide-react"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,7 +14,12 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <Plane className="h-6 w-6 text-primary" />
+          <Image
+                width={40}
+                height={40}
+                alt="TripMandarin Logo"
+                src="/logo.png" />
+               
             <span className="text-xl font-bold text-primary">TripMandarin</span>
           </a>
 
