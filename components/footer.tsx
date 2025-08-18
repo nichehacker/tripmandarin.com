@@ -1,4 +1,4 @@
-import { Plane } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -8,7 +8,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <Plane className="h-6 w-6 text-primary" />
+            <Image
+                width={40}
+                height={40}
+                alt="TripMandarin Logo"
+                src="/logo.png" />
               <span className="text-xl font-bold text-primary">TripMandarin</span>
             </div>
             <p className="text-muted-foreground text-sm">
