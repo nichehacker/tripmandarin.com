@@ -42,6 +42,9 @@ export default function Header() {
             >
               Cheat Sheet
             </a>
+            <a href="/guide" className="text-sm font-medium hover:text-primary transition-colors">
+              Guide
+            </a>
             <a
               href="/travel-info"
               className="text-sm font-medium hover:text-primary transition-colors"
@@ -89,6 +92,9 @@ export default function Header() {
                 className="text-sm font-medium hover:text-primary transition-colors"
               >
                 Cheat Sheet
+              </a>
+              <a href="/guide" className="text-sm font-medium hover:text-primary transition-colors">
+                Guide
               </a>
               <a
                 href="/travel-info"
