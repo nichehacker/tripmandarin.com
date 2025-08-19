@@ -84,7 +84,7 @@ export default function Contact() {
                   <Mail className="h-5 w-5 text-red-600 mr-3" />
                   <div>
                     <p className="font-medium text-gray-800">Email</p>
-                    <p className="text-gray-600">support@tripmandarin.com</p>
+                    <p className="text-gray-600">1942821318@qq.com</p>
                   </div>
                 </div>
 
