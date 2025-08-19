@@ -33,6 +33,9 @@ export default function Header() {
             <a href="/quiz" className="text-sm font-medium hover:text-primary transition-colors">
               Quiz
             </a>
+            <a href="/game" className="text-sm font-medium hover:text-primary transition-colors">
+              Game
+            </a>
             <a
               href="/cheat-sheet"
               className="text-sm font-medium hover:text-primary transition-colors"
@@ -71,6 +74,9 @@ export default function Header() {
               </a>
               <a href="/quiz" className="text-sm font-medium hover:text-primary transition-colors">
                 Quiz
+              </a>
+              <a href="/game" className="text-sm font-medium hover:text-primary transition-colors">
+                Game
               </a>
               <a
                 href="/cheat-sheet"
