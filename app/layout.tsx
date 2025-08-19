@@ -88,6 +88,13 @@ html {
             });
           `}
         </Script>
+
+        {/* Umami Analytics */}
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="e8e27e17-6700-414d-8b63-24a92d73c745"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
