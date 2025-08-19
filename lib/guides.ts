@@ -22,7 +22,7 @@ export const guides: Guide[] = [
     readTime: '8 min read',
     category: 'Transportation',
     date: '2024-01-15',
-    image: '/placeholder.svg?height=200&width=400',
+    image: '/guide-1.png?height=200&width=400',
     content: `# How to Take a Taxi in Beijing: A Complete Guide for Foreign Travelers
 
 Taking a taxi in Beijing can be convenient but confusing for foreign travelers. This guide provides **step-by-step instructions**, practical tips, and essential Chinese phrases to help you navigate the city safely.

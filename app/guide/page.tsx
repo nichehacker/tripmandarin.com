@@ -52,7 +52,7 @@ export default function GuidePage() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
                 <div className="aspect-video overflow-hidden">
                   <img
-                    src={guide.image || '/placeholder.svg'}
+                    src={guide.image || '/guide-1.png'}
                     alt={guide.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
