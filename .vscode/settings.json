@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true, // 保存时自动格式化
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 指定 Prettier 作为默认格式化工具
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always" // 保存时自动执行 ESLint 自动修复
+  },
+  "files.eol": "\n", // 统一换行符为 LF
+  "prettier.requireConfig": true, // 确保使用项目内的 Prettier 配置
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+}
