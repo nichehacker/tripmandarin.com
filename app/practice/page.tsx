@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowLeft, Brain, Mic, MessageSquare } from "lucide-react"
-import Link from "next/link"
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { ArrowLeft, Brain, Mic, MessageSquare } from 'lucide-react'
+import Link from 'next/link'
 
 export default function PracticePage() {
   return (
@@ -17,7 +17,9 @@ export default function PracticePage() {
             </Button>
             <div>
               <h1 className="text-2xl font-bold">Practice Tools</h1>
-              <p className="text-muted-foreground">Interactive ways to master your Chinese phrases</p>
+              <p className="text-muted-foreground">
+                Interactive ways to master your Chinese phrases
+              </p>
             </div>
           </div>
         </div>
@@ -25,7 +27,7 @@ export default function PracticePage() {
 
       <main className="max-w-4xl mx-auto px-4 py-8">
         <div className="grid md:grid-cols-3 gap-6">
-          <Card className="hover:shadow-lg transition-shadow cursor-pointer" asChild>
+          <Card className="hover:shadow-lg transition-shadow cursor-pointer">
             <Link href="/quiz">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
@@ -41,27 +43,28 @@ export default function PracticePage() {
             </Link>
           </Card>
 
-          <Card className="hover:shadow-lg transition-shadow cursor-pointer" asChild>
+          <Card className="hover:shadow-lg transition-shadow cursor-pointer">
             <Link href="/practice/flashcards">
               <CardHeader>
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-2">
-                  <MessageSquare className="h-6 w-6 text-secondary" />
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
+                  <MessageSquare className="h-6 w-6 text-primary" />
                 </div>
                 <CardTitle>Flashcards</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Practice with interactive flashcards. Flip cards to test your memory and track progress.
+                  Practice with interactive flashcards. Flip cards to test your memory and track
+                  progress.
                 </p>
               </CardContent>
             </Link>
           </Card>
 
-          <Card className="hover:shadow-lg transition-shadow cursor-pointer" asChild>
+          <Card className="hover:shadow-lg transition-shadow cursor-pointer">
             <Link href="/practice/pronunciation">
               <CardHeader>
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-2">
-                  <Mic className="h-6 w-6 text-accent" />
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
+                  <Mic className="h-6 w-6 text-primary" />
                 </div>
                 <CardTitle>Pronunciation</CardTitle>
               </CardHeader>
