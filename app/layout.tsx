@@ -95,6 +95,9 @@ html {
           data-website-id="e8e27e17-6700-414d-8b63-24a92d73c745"
           strategy="afterInteractive"
         />
+
+        {/* Rybbit Analytics */}
+        <Script src="https://app.rybbit.io/api/script.js" data-site-id="2141" defer />
       </body>
     </html>
   )
