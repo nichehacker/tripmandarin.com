@@ -1,11 +1,11 @@
-"use client"
+'use client'
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Plane, Download, Play, Clock, Bookmark, Speech } from "lucide-react"
-import Footer from "@/components/footer"
-import Header from "@/components/header"
-import Image from "next/image"
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import { Plane, Download, Play, Clock, Bookmark, Speech } from 'lucide-react'
+import Footer from '@/components/footer'
+import Header from '@/components/header'
+import Image from 'next/image'
 
 export default function HomePage() {
   return (
@@ -20,23 +20,18 @@ export default function HomePage() {
             <div className="text-center lg:text-left">
               {/* Logo/Brand - smaller for left layout */}
               <div className="flex items-center justify-center lg:justify-start gap-2 mb-6">
-              
-                <Image
-                width={40}
-                height={40}
-                alt="TripMandarin Logo"
-                src="/logo.png" />
+                <Image width={40} height={40} alt="TripMandarin Logo" src="/logo.png" />
                 <h1 className="text-xl md:text-2xl font-bold text-primary">TripMandarin</h1>
               </div>
 
               <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
                 Learn Mandarin Chinese
-                <span className="block text-primary">for Travelers in 7 Days!</span>
+                <span className="block text-primary">for Travelers in 3 Days!</span>
               </h2>
 
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                Essential China travel phrases for taxis, restaurants, and shopping. Master Chinese for travelers with
-                our interactive lessons.
+                Essential China travel phrases for taxis, restaurants, and shopping. Master Chinese
+                for travelers with our interactive lessons.
               </p>
 
               {/* Core Action Buttons */}
@@ -47,7 +42,12 @@ export default function HomePage() {
                     Start Learning Mandarin
                   </a>
                 </Button>
-                <Button variant="secondary" size="lg" className="w-full sm:w-auto text-lg px-6 py-6" asChild>
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  className="w-full sm:w-auto text-lg px-6 py-6"
+                  asChild
+                >
                   <a href="/tools/phrasebook">
                     <Download className="mr-2 h-5 w-5" />
                     Download Phrasebook
@@ -77,7 +77,9 @@ export default function HomePage() {
       {/* Features Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-center mb-12">Why Choose TripMandarin for Learning Chinese?</h3>
+          <h3 className="text-3xl font-bold text-center mb-12">
+            Why Choose TripMandarin for Learning Chinese?
+          </h3>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="text-center">
@@ -87,8 +89,8 @@ export default function HomePage() {
                 </div>
                 <h4 className="text-xl font-semibold mb-2">China Travel-Focused</h4>
                 <p className="text-muted-foreground">
-                  Learn only essential Chinese phrases for real travel situations: ordering food, taking taxis,
-                  shopping, and emergencies in China.
+                  Learn only essential Chinese phrases for real travel situations: ordering food,
+                  taking taxis, shopping, and emergencies in China.
                 </p>
               </CardContent>
             </Card>
@@ -100,8 +102,8 @@ export default function HomePage() {
                 </div>
                 <h4 className="text-xl font-semibold mb-2">Quick Mandarin Learning</h4>
                 <p className="text-muted-foreground">
-                  Master essential Chinese travel phrases in just 5 minutes per lesson. Perfect for busy travelers
-                  preparing for China.
+                  Master essential Chinese travel phrases in just 5 minutes per lesson. Perfect for
+                  busy travelers preparing for China.
                 </p>
               </CardContent>
             </Card>
@@ -113,8 +115,8 @@ export default function HomePage() {
                 </div>
                 <h4 className="text-xl font-semibold mb-2">Chinese Cultural Tips</h4>
                 <p className="text-muted-foreground">
-                  Learn not just Mandarin phrases, but also Chinese cultural etiquette to help you navigate China with
-                  confidence.
+                  Learn not just Mandarin phrases, but also Chinese cultural etiquette to help you
+                  navigate China with confidence.
                 </p>
               </CardContent>
             </Card>
@@ -126,8 +128,8 @@ export default function HomePage() {
                 </div>
                 <h4 className="text-xl font-semibold mb-2">Chinese Pronunciation Practice</h4>
                 <p className="text-muted-foreground">
-                  Native Mandarin pronunciation with AI speech recognition feedback. Practice Chinese speaking and get
-                  instant accuracy scores.
+                  Native Mandarin pronunciation with AI speech recognition feedback. Practice
+                  Chinese speaking and get instant accuracy scores.
                 </p>
               </CardContent>
             </Card>
@@ -138,15 +140,32 @@ export default function HomePage() {
       {/* Travel Scenarios Preview */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-center mb-12">Learn Chinese by China Travel Scenario</h3>
+          <h3 className="text-3xl font-bold text-center mb-12">
+            Learn Chinese by China Travel Scenario
+          </h3>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
-              { icon: "🚕", title: "Taxi Chinese", phrases: "10 phrases", href: "/courses/taxi" },
-              { icon: "🍜", title: "Restaurant Chinese", phrases: "12 phrases", href: "/courses/restaurant" },
-              { icon: "🏨", title: "Hotel Chinese", phrases: "8 phrases", href: "/courses/hotel" },
-              { icon: "🛍️", title: "Shopping Chinese", phrases: "10 phrases", href: "/courses/shopping" },
-              { icon: "🚨", title: "Emergency Chinese", phrases: "6 phrases", href: "/courses/emergency" },
+              { icon: '🚕', title: 'Taxi Chinese', phrases: '10 phrases', href: '/courses/taxi' },
+              {
+                icon: '🍜',
+                title: 'Restaurant Chinese',
+                phrases: '12 phrases',
+                href: '/courses/restaurant'
+              },
+              { icon: '🏨', title: 'Hotel Chinese', phrases: '8 phrases', href: '/courses/hotel' },
+              {
+                icon: '🛍️',
+                title: 'Shopping Chinese',
+                phrases: '10 phrases',
+                href: '/courses/shopping'
+              },
+              {
+                icon: '🚨',
+                title: 'Emergency Chinese',
+                phrases: '6 phrases',
+                href: '/courses/emergency'
+              }
             ].map((scenario, index) => (
               <Card key={index} className="hover:shadow-md transition-shadow cursor-pointer">
                 <a href={scenario.href}>
@@ -167,8 +186,8 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-3xl font-bold mb-4">Ready to Start Learning Chinese for Travel?</h3>
           <p className="text-lg text-muted-foreground mb-8">
-            Join thousands of travelers who've successfully learned essential Mandarin phrases for China with
-            TripMandarin.
+            Join thousands of travelers who've successfully learned essential Mandarin phrases for
+            China with TripMandarin.
           </p>
           <Button size="lg" className="text-lg px-8 py-6" asChild>
             <a href="/courses">
