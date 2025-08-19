@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -8,11 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-            <Image
-                width={40}
-                height={40}
-                alt="TripMandarin Logo"
-                src="/logo.png" />
+              <Image width={40} height={40} alt="TripMandarin Logo" src="/logo.png" />
               <span className="text-xl font-bold text-primary">TripMandarin</span>
             </div>
             <p className="text-muted-foreground text-sm">
@@ -52,7 +48,10 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/tools/emergency-card" className="text-muted-foreground hover:text-foreground">
+                <a
+                  href="/tools/emergency-card"
+                  className="text-muted-foreground hover:text-foreground"
+                >
                   Emergency Card
                 </a>
               </li>
@@ -90,7 +89,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 TripMandarin. All rights reserved. Learn Mandarin for China Travel.
+            © 2025 TripMandarin. All rights reserved. Learn Mandarin for China Travel.
           </p>
         </div>
       </div>
