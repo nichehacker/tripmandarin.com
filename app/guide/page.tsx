@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { ArrowLeft, Clock, User, Tag } from 'lucide-react'
 import Link from 'next/link'
 import { guides, categories } from '@/lib/guides'
@@ -49,29 +49,26 @@ export default function GuidePage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {guides.map(guide => (
             <Link key={guide.id} href={`/guide/${guide.slug}`}>
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
-                <div className="aspect-video overflow-hidden">
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer h-[420px] flex flex-col relative">
+                <div className="h-48 overflow-hidden flex-shrink-0">
                   <img
-                    src={guide.image || '/guide-1.png'}
+                    src={guide.image || '/placeholder.svg'}
                     alt={guide.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <CardHeader className="pb-3">
+                <CardHeader className="pb-3 flex-1 flex flex-col">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
                       <Tag className="h-3 w-3 mr-1" />
                       {guide.category}
                     </span>
                   </div>
-                  <CardTitle className="text-lg leading-tight hover:text-red-600 transition-colors">
+                  <CardTitle className="text-lg leading-tight hover:text-red-600 transition-colors line-clamp-3 overflow-hidden mb-2">
                     {guide.title}
                   </CardTitle>
-                  <CardDescription className="text-sm text-gray-600 line-clamp-2">
-                    {guide.description}
-                  </CardDescription>
                 </CardHeader>
-                <CardContent className="pt-0">
+                <CardContent className="pt-0 flex-shrink-0 pb-4 px-6 absolute bottom-1 left-0 right-0">
                   <div className="flex items-center justify-between text-sm text-gray-500">
                     <div className="flex items-center gap-4">
                       <div className="flex items-center gap-1">
